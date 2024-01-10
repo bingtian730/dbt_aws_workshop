@@ -11,7 +11,7 @@ version: 2
                 
           - name: lineitem
             external:
-                location: "s3://dbt-data-lake-[Insert AWS Account ID]]/dbtworkshopdata/lineitem/" 
+                location: "s3://dbt-data-lake-032396686466/dbtworkshopdata/lineitem/" 
                 row_format: serde 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
                 table_properties: "('skip.header.line.count'='1')"
             columns:
@@ -47,7 +47,7 @@ version: 2
          
           - name: orders
             external:
-                location: "s3://dbt-data-lake-[Insert AWS Account ID]/dbtworkshopdata/orders/"      
+                location: "s3://dbt-data-lake-032396686466/dbtworkshopdata/orders/"      
                 row_format: serde 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
                 table_properties: "('skip.header.line.count'='1')"
             columns:
